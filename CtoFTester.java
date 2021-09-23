@@ -2,15 +2,15 @@
 // The functions should return a float of the converted temperature.
 public class CtoFTester {
   public static void main(String[] args) {
-    celsiusToFahrenheit(0)
-    celsiusToFahrenheit(68)
-    fahrenheitToCelsius(0)
-    fahrenheitToCelsius(68)
+    System.out.println(celsiusToFahrenheit(0));
+    System.out.println(celsiusToFahrenheit(68));
+    System.out.println(fahrenheitToCelsius(0));
+    System.out.println(fahrenheitToCelsius(68));
   }
-  static void celsiusToFahrenheit(float temp) {
-    temp * 9 / 5 + 32
+  static float celsiusToFahrenheit(float temp) {
+    return ((temp * 9) / 5 + 32);
   }
-  static void fahrenheitToCelsius(float temp) {
-    (temp - 32) * 5 / 9
+  static float fahrenheitToCelsius(float temp) {
+    return (((temp - 32) * 5) / 9);
   }
 }
